@@ -16,7 +16,7 @@ def main():
         username="",
         password="",
         use_cookie=True,
-        cookie_fname="config\\myCookie.json",
+        cookie_fname="config\\myCookie2.json",
     )
     while True:
         ok = bot.get_messages()
@@ -51,7 +51,7 @@ def main():
                                         json_data["link"], str(item["user_id"])
                                     )
                                     bot.send_message(
-                                        "please copy the link and use it in Safri Then download it. Thank you for using me :D",
+                                        "please copy the link and use it in Safari Then download it. Thank you for using me :D",
                                         str(item["user_id"]),
                                     )
                                     count = count + 1
@@ -73,7 +73,7 @@ def main():
                             json_data = response.json()
                             bot.send_message(json_data["link"], str(item["user_id"]))
                             bot.send_message(
-                                "please copy the link and use it in Safri Then downloaded Thank you for using me :D",
+                                "please copy the link and use it in Safari Then download it Thank you for using me :D",
                                 str(item["user_id"]),
                             )
                             count = count + 1
@@ -99,7 +99,7 @@ def main():
                                 json_data = response.json()
                                 bot.send_message(json_data["link"], str(item["user_id"]))
                                 bot.send_message(
-                                    "please copy the link and use it in Safri and Thank you for using me :D",
+                                    "please copy the link and use it in Safari and Thank you for using me :D",
                                     str(item["user_id"]),
                                 )
                                 count = count + 1
@@ -115,13 +115,13 @@ def main():
                                 json_data = response.json()
                                 bot.send_message(json_data["link"], str(item["user_id"]))
                                 bot.send_message(
-                                    "please copy the link and use it in Safri and Thank you for using me :D",
+                                    "please copy the link and use it in Safari and Thank you for using me :D",
                                     str(item["user_id"]),
                                 )
                                 count = count + 1
                         except:
                             bot.send_message(
-                            "Sorry I acnt help you with that :|", str(item["user_id"])
+                            "Sorry I cant help you with that :|", str(item["user_id"])
                         )
 
                     elif item["item_type"] == "felix_share":
@@ -138,13 +138,13 @@ def main():
                             json_data = response.json()
                             bot.send_message(json_data["link"], str(item["user_id"]))
                             bot.send_message(
-                                "please copy the link and use it in Safri and Thank you for using me :D",
+                                "please copy the link and use it in Safari and Thank you for using me :D",
                                 str(item["user_id"]),
                             )
                             count = count + 1
                         else:
                             bot.send_message(
-                            "Sorry I acnt help you with that :|", str(item["user_id"])
+                            "Sorry I cant help you with that :|", str(item["user_id"])
                         )    
 
                     elif item["item_type"] == "profile":
@@ -161,7 +161,7 @@ def main():
                         json_data = response.json()
                         bot.send_message(json_data["link"], str(item["user_id"]))
                         bot.send_message(
-                            "please copy the link and use it in Safri Then downloaded Thank you for using me :D",
+                            "please copy the link and use it in Safari Then download it Thank you for using me :D",
                             str(item["user_id"]),
                         )
                         count = count + 1
@@ -172,11 +172,11 @@ def main():
                     else:
                         count = count + 1
                         bot.send_message(
-                            "Sorry I acnt help you with that :|", str(item["user_id"])
+                            "Sorry I cant help you with that :|", str(item["user_id"])
                         )
                 except:
                         bot.send_message(
-                        "Sorry I acnt help you with that :|", str(item["user_id"])
+                        "Sorry I cant help you with that :|", str(item["user_id"])
                     )    
         print("done " + str(count))
         time.sleep(DELAY)
