@@ -123,3 +123,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+data
+data.xml
+exbot.py
+insta_bot_cli.py
+test.py
+video/test.mp4
+video/test.txt
